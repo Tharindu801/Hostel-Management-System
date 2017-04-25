@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <div id="mainform">
+            <div class="innerdiv">
+                <h2>Form Validation Using AJAX</h2>
+                <!-- Required div starts here -->
+                <form action='#' method='post' id="myForm">
+                    <h3>Fill Your Information!</h3>
+                    <table>
+                        <tr>
+                            <td>Username</td>
+                            <td><input type='text' name='username' id='username1' onblur="validate('username', this.value)"></td>
+                            <td><div id='username'></div></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type='password' name='password' id='password1' onblur="validate('password', this.value)"></td>
+                            <td><div id='password'></div></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type='text' name='email' id='email1' onblur="validate('email', this.value)"></td>
+                            <td><div id='email'></div></td>
+                        </tr>
+                        <tr>
+                            <td>website</td>
+                            <td><input type='text' name='website' id='website1' onblur="validate('website', this.value)"></td>
+                            <td><div id='website'></div></td>
+                        </tr>
+                    </table>
+                    <input type='button' onclick="checkForm()" value='Submit'>
+                </form>
+            </div>
+            <!-- Right side div -->
+            <div id="formget"><a href=http://www.formget.com/app><img src="formget.jpg" alt="Online Form Builder"/></a>
+            </div>
+        </div>
+    </body>
+</html>
