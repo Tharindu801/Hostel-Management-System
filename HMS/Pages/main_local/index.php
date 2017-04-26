@@ -73,11 +73,10 @@
    
         <tr>
            <td>
-<<<<<<< HEAD
+
               <a href="#" class="btn btn-block btn-huge btn-primary " >Past Student</a>
-=======
+
               <a href="#" class="btn btn-block btn-huge btn-primary " ><span class="glyphicon glyphicon-user pull-left"></span> Past Student</a>
->>>>>>> 8de6317... this is already implimented system
             </td>
         </tr> 
         <tr>
@@ -85,14 +84,11 @@
               <a href="withoutPic.php?" class="btn btn-block btn-huge btn-success " > Student without picture</a>
             </td>
         </tr> 
-<<<<<<< HEAD
         <tr>
          <td>
               <a href="withoutRoom.php" class="btn btn-block btn-huge btn-primary " > Student Without Room</a>
             </td>
         </tr> 
-=======
->>>>>>> 8de6317... this is already implimented system
       </table>
       </div>
 
@@ -100,7 +96,6 @@
         <table>
           <tr>
             <td>
-<<<<<<< HEAD
               <a href="#" class="btn btn-block btn-huge btn-primary"> Edit Hostel</a>
             </td>
           </tr>
@@ -111,12 +106,11 @@
               <a href="roomView.php" class="btn btn-block btn-huge btn-primary " > Room Detail</a>
             </td>
           </tr>
-=======
               <a href="#" class="btn btn-block btn-huge btn-primary"><span class="glyphicon glyphicon-user pull-left"></span> Edit Hostel</a>
             </td>
           </tr>
          <tr><td><a href="add_new.php" class="btn btn-block btn-huge btn-success">Allocate approved Student to hostel</a></td></tr>
->>>>>>> 8de6317... this is already implimented system
+
         </table>
       </div>
        <div class="col-sm-1">
