@@ -20,18 +20,9 @@
 
 <script>
   function  getStData(key) {
-   
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var res = this.responseText;
-      document.getElementById("hosview").innerHTML = res;
-      //alert(res);
-      }
-    };
-      
-     xhttp.open("GET", "hostel_view.php?key="+key, true);
-     xhttp.send();
+     $.get("hostel_view.php?key="+key, function(data, status){
+        document.getElementById("hosview").innerHTML = data;
+    });
   }
 
          

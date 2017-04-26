@@ -45,15 +45,9 @@ tr{
 <!-- Jason Script For  -->
 <script>
 	function 	getStData(key) {
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
- 			var res = this.responseText;
- 			document.getElementById("std_table").innerHTML = res;
-			}
- 		};
-		 xhttp.open("GET", "../../lib/STD_DeleteMain.php?key="+key, true);
-		 xhttp.send();
+      $.get("../../lib/STD_DeleteMain.php?key="+key, function(data, status){
+        document.getElementById("std_table").innerHTML = data;
+    });
 	}
 
          

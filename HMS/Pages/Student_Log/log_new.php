@@ -50,33 +50,22 @@ textarea {
 <script>
 // Function to load form
   function  loadForm(key) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var res = this.responseText;
-      document.getElementById("LogFrm").innerHTML = res;
-      }
-    };
-     xhttp.open("GET", "../../lib/LOG_newForm.php?key="+key, true);
-     xhttp.send();
+     $.get("../../lib/LOG_newForm.php?key="+key, function(data, status){
+        document.getElementById("LogFrm").innerHTML = data;
+    });
   }
   // Function to enable save button
   function  enableSave(key) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var res = this.responseText;
-      if (res == 'true') {
+     $.get("../../lib/LOG_newForm.php?key="+key, function(data, status){
+        var res = data;
+        if (res == 'true') {
         document.getElementById("sve").disabled = false;
       }
       else
       {
         document.getElementById("sve").disabled = true;
       }
-      }
-    };
-     xhttp.open("GET", "../../lib/LOG_BtnEnable.php?key="+key, true);
-     xhttp.send();
+    });
   }
   // Function to trigger both functions
   function checkDB(key){

@@ -53,17 +53,9 @@ include('../../lib/STAFF_add.php'); // Includes Login Script
  function  getHosStaffData(key) {
   if(key != 'admin')
    {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var res = this.responseText;
-      document.getElementById("hos").innerHTML = res;
-      //alert(res);
-      }
-    };
-      
-     xhttp.open("GET", "hostel_select.php?key="+key, true);
-     xhttp.send();
+     $.get("hostel_select.php?key="+key, function(data, status){
+        document.getElementById("hos").innerHTML = data;
+    });
    }
    else
    {

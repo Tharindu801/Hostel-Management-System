@@ -19,15 +19,9 @@
   <script src="script.js"></script>
   <script>
   function  getHosData(key) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var res = this.responseText;
-      document.getElementById("frm").innerHTML = res;
-      }
-    };
-     xhttp.open("GET", "../../lib/HOS_showForEdit.php?key="+key, true);
-     xhttp.send();
+     $.get("../../lib/HOS_showForEdit.php?key="+key, function(data, status){
+        document.getElementById("frm").innerHTML = data;
+    });
   }
   </script>
   <style>

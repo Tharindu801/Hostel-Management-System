@@ -38,17 +38,12 @@
   <!-- Scripts -->
   <script>
   // Get Table data
-  	function 	getStData(key) {
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
- 			var res = this.responseText;
- 			document.getElementById("printCont").innerHTML = res;
-			}
- 		};
-		 xhttp.open("GET", "../../lib/DOC_StudentDetails.php?key="+key, true);
-		 xhttp.send();
-	}
+
+     function   getStData(key) {
+    $.get("../../lib/DOC_StudentDetails.php?key="+key, function(data, status){
+        document.getElementById("printCont").innerHTML = data;
+    });
+  }
 	// print
 	function PrintElem(elem)
     {

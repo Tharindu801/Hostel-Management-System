@@ -56,32 +56,14 @@ th, td{
     });
 
     function getPaymentData(key) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var res = this.responseText;
-            var res1 =this.responseText;
-            
-            document.getElementById("content").innerHTML = res;
-            //document.getElementById("update").innerHTML = res1;
-            }
-        };
-         xhttp.open("GET", "payment_View.php?key="+key, true);
-         xhttp.send();
+         $.get("payment_View.php?key="+key, function(data, status){
+        document.getElementById("content").innerHTML = data;
+    });
     }
     function getPaymentTable(key) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var res = this.responseText;
-            var res1 =this.responseText;
-            
-            document.getElementById("cTable").innerHTML = res;
-            //document.getElementById("update").innerHTML = res1;
-            }
-        };
-         xhttp.open("GET", "../../lib/PAY_TView.php?key="+key, true);
-         xhttp.send();
+         $.get("../../lib/PAY_TView.php?key="+key, function(data, status){
+        document.getElementById("cTable").innerHTML = data;
+    });
     }
 
 </script>
