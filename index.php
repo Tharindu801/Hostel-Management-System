@@ -88,11 +88,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-<<<<<<< HEAD
                     <img class="img-responsive" src="img/logo.png" alt="">
-=======
-                    <img class="img-responsive" src="img/logo.jpg" alt="">
->>>>>>> 8de6317... this is already implimented system
                     <div class="intro-text">
                         <span class="name">University of Jaffna</span>
                         <hr class="star-light">
