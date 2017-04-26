@@ -5,11 +5,6 @@
   {
     header('Location: ../../index.php');
   }
-  // get alert from deletee or edit
-  $mAlert = "";
-  if (isset($_GET["alrt"])) {
-    $mAlert = $_GET["alrt"];
-  }
  ?>
  <!-- Page Start -->
 <!doctype html>
@@ -19,8 +14,10 @@
 <title>Staff Detail</title>
 <link rel="icon" href="../../Images/logo.ico" />
 <link rel="stylesheet" href="../../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/sweetalert.css">
   <script src="../../js/jquery-3.1.1.min.js"></script>
   <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/sweetalert.min.js"></script>
 <style>
 div.cont{
 	width: 100%;
@@ -73,17 +70,41 @@ div.cont{
         });
 
       });
+  // Function for delete
+  function deleteUser(key)
+  {
+     swal({
+      title: "Are you sure, delete this user acount permenently?", 
+      text: "You will not be able to recover this user acount again!", 
+      type: "warning",
+      showCancelButton: true,
+      closeOnConfirm: false,
+      confirmButtonText: "Yes, delete it!",
+      confirmButtonColor: "#ec6c62"
+    }, function() {
+        $.ajax(
+                {
+                    type: "get",
+                    url: "../../lib/USR_delete.php",
+                    data: "id="+key,
+                    success: function(data){
+                    }
+                }
+        )
+      .done(function(data) {
+        swal("Deleted successfully!", "user acount was successfully deleted!", "success");
+        getStData('');
+      })
+      .error(function(data) {
+        swal("Oops", "Some thing wrong in server, try again", "error");
+      });
+    });
+  }
 </script>
 
 </head>
 <body onload="getStData('')">
 <!-- Show message -->
-   <?php 
-    if(isset($mAlert))
-    {
-      echo "$mAlert";
-    }
-    ?>
 	<div class="cont col-sm-12">
    <br>
     <div class="input-group">
@@ -98,8 +119,6 @@ div.cont{
     </table>
     </div>
     <div id="controlBtns" class="well well-sm">
-    
-     <h5 align="center">click relevent raw to delete to delete</h5>
     </div>
     </div>
 </body>

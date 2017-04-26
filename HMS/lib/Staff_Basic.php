@@ -28,19 +28,19 @@ include('STD_Con.php');
     		while($row = $result->fetch_assoc()) 
     		{
     			$id = $row["user_id"];
-    			// ----------dispaly stuff details table------------
+// -----------dispaly stuff details table-------------------------------------------------
 				echo"<tr>
 						<td class=\"col-xs-2\">".$row["user_id"]."</td>
 						<td class=\"col-xs-4\">".$row["Name"]."</td>
 						<td class=\"col-xs-2\">".$row["type"]."</td>
 						<th class=\"col-xs-2\">
-						<a class=\"btn btn-danger btn-xs ";
+						<button type=\"button\" onclick=\"deleteUser('$id');\"class=\"btn btn-danger btn-xs ";
 // ----------for disable delete button for loged in user----------------------------------
 					if ($_SESSION['user_id'] == $id) {
 						echo "disabled";
 					}
-				echo "\" href=\"../../lib/USR_delete.php?id=$id\"><span class=\"glyphicon glyphicon-trash\"></a>
-						<a class=\"btn btn-warning btn-xs ";
+				echo "\"><span class=\"glyphicon glyphicon-trash\"></button>
+						<bu class=\"btn btn-warning btn-xs ";
 // ----------for disable edit button for loged in user------------------------------------
 					if ($_SESSION['user_id'] == $id) {
 						echo "disabled";

@@ -1,7 +1,6 @@
 <?php
 include('STD_Con.php');
 $id = $_GET['id'];
-$msg="";
 if(isset($id))
 {
 	// Query for delete user
@@ -19,42 +18,17 @@ if ($res_getDT->num_rows>0){
     		}
 if($type == 'warden')
 {
-if($conn->query($sql) === TRUE && $conn->query($Update_W))
-{
-	$msg = "<div class=\"msgStrip alert alert-danger\" id=\"alert\">User Have been deleted success fully !</div>";
-
-}
-else
-{
-	$msg = "<div class=\"msgStrip alert alert-danger\" id=\"alert\">Sorry! your command did not complete.</div>";
-}
+$conn->query($sql);
+$conn->query($Update_W);
 }
 elseif($type == 'subwarden')
 {
-
-if($conn->query($sql) === TRUE && $conn->query($Update_S))
-{
-	$msg = "<div class=\"msgStrip alert alert-danger\" id=\"alert\">User Have been deleted success fully !</div>";
-
+$conn->query($sql);
+$conn->query($Update_S);
 }
 else
 {
-	$msg = "<div class=\"msgStrip alert alert-danger\" id=\"alert\">Sorry! your command did not complete.</div>";
+$conn->query($sql);
 }
 }
-else
-{
-	if($conn->query($sql) === TRUE)
-{
-	$msg = "<div class=\"msgStrip alert alert-danger\" id=\"alert\">User Have been deleted success fully !</div>";
-
-}
-else
-{
-	$msg = "<div class=\"msgStrip alert alert-danger\" id=\"alert\">Sorry! your command did not complete.</div>";
-}
-}
-}
-header("Location: ../Pages/main_admin/staff_view.php?alrt=$msg");
-
 ?>
