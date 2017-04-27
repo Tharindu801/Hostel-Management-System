@@ -71,7 +71,8 @@ tr{
 <!-- Jason Script For  -->
 <script>
 	function 	getStData(key) {
-     $.get("../../lib/STD_noPic.php?key="+key, function(data, status){
+    var hosID = '<?php echo $_SESSION['hostel_id']; ?>';
+     $.get("../../lib/STD_noPic_local.php?key="+key+"&hid="+hosID, function(data, status){
         document.getElementById("std_table").innerHTML = data;
     });
 	}
