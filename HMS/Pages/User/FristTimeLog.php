@@ -43,6 +43,27 @@ include('../../lib/USR_ChangePW.php'); // Includes Login Script
     -ms-transform:scaleX(-1);
   }
   </style>
+  <script>
+    function checkUserName(key) {
+    $.get("../../lib/USR_unameIsThere.php?uName="+key, function(data, status){
+        if(data == '0' && key !=''){
+          document.getElementById("userDiv").classList.remove("has-error");
+          document.getElementById("nameIco").classList.remove("glyphicon-remove");
+          document.getElementById("userDiv").classList.add("has-success");
+          document.getElementById("nameIco").classList.add("glyphicon-ok");
+          document.getElementById("sub").disabled = false;
+        }
+        else
+        {
+          document.getElementById("userDiv").classList.remove("has-success");
+          document.getElementById("nameIco").classList.remove("glyphicon-ok");
+          document.getElementById("userDiv").classList.add("has-error");
+          document.getElementById("nameIco").classList.add("glyphicon-remove");
+          document.getElementById("sub").disabled = true;
+        }
+    });
+  }
+  </script>
 </head>
 
 <body>
@@ -57,13 +78,13 @@ include('../../lib/USR_ChangePW.php'); // Includes Login Script
   <div class="col-sm-4" style="padding-top: 5px">
   <!-- panal start -->
   <div class="panel panel-primary">
-    <div class="panel-heading"><h4 align="center">Change User Password</h4></div>
+    <div class="panel-heading"><h4 align="center">Change Username & Password</h4></div>
     <div class="panel-body">
-      <form class="form-group" method="post" action="../../lib/USR_FristLog.php">
+      <form class="form-group" method="post">
       <!-- user name -->
         
         <div class="<?php echo $UaP; ?>">
-        <p><label class="control-label">Username</label></p><p><input type="text" name="userNm" class="form-control"></p></div>
+        <p><label class="control-label">Current Username</label></p><p><input type="text" name="userNm" class="form-control"></p></div>
         
         <!-- current pasword -->
         
@@ -71,6 +92,11 @@ include('../../lib/USR_ChangePW.php'); // Includes Login Script
         <p><label class="control-label">Current Password</label></p><p> <input type="Password" name="crPassword" class="form-control"></p>
         </div>
         <hr>
+        <!-- new Username -->
+        <div class="<?php echo $NP; ?>has-feedback form-group">
+        <p><label class="control-label">new Username</label></p><div id="userDiv" class="has-feedback form-group"><p><input type="text" name="NewuserNm" class="form-control" onkeyup="checkUserName(this.value)">
+        <span class="glyphicon form-control-feedback" id="nameIco"></span>
+        </p></div></div>
         <!-- new password -->
         
         <div class="<?php echo $NP; ?>">
@@ -84,7 +110,7 @@ include('../../lib/USR_ChangePW.php'); // Includes Login Script
         <!-- Show error message -->
         <?php echo $error; ?>
         <!-- form buttons -->
-        <p align="right"><a href="../../lib/logout.php" class="btn btn-danger">Cancel</a> <input type="submit"  name="submit" class="btn btn-primary" value="Change"></p>
+        <p align="right"><a href="../../lib/logout.php" class="btn btn-danger">Cancel</a> <input type="submit"  name="submit" class="btn btn-primary" value="Change" id="sub"></p>
       </form>
     </div>
   </div>

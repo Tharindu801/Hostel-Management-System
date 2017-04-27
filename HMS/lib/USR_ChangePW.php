@@ -5,7 +5,7 @@ $UaP = '';
 $NP = '';
 if(isset($_POST['submit']))
 {
-	if (empty($_POST['userNm']) || empty($_POST['crPassword']) || empty($_POST['newPassword']) || empty($_POST['confPassword']))
+	if (empty($_POST['userNm']) || empty($_POST['crPassword']) || empty($_POST['newPassword']) || empty($_POST['confPassword']) || empty($_POST['NewuserNm']))
 	{
 		$error = "<div class=\"msgStrip alert alert-danger\">You should fill every fields</div>";
 		$UaP = 'has-error';
@@ -14,6 +14,7 @@ if(isset($_POST['submit']))
 	else
 	{
 		$userNm = $_POST['userNm'];
+		$nuserNm = $_POST['NewuserNm'];
 		$cpw 	= $_POST['crPassword'];
 		$npw 	= $_POST['newPassword'];
 		$Cnpw 	= $_POST['confPassword'];
@@ -37,7 +38,7 @@ if(isset($_POST['submit']))
 		{
 			if($npw == $Cnpw)
 			{
-				$sql = "UPDATE user_details SET pasword = '$npw' WHERE UserName='$userNm';";
+				$sql = "UPDATE user_details SET pasword = '$npw', UserName = '$nuserNm', Frist_login = 'no' WHERE UserName='$userNm';";
 				if ($conn->query($sql) === TRUE)
 				{
 					if(session_destroy()) // Destroying All Sessions
