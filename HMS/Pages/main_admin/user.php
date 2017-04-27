@@ -63,7 +63,27 @@ include('../../lib/STAFF_add.php'); // Includes Login Script
    }
     
   }
-
+  // Check whether id is ok
+  function checkID(key) {
+    $.get("../../lib/USR_idIsThere.php?id="+key, function(data, status){
+        if(data == '0' && key !=''){
+          document.getElementById("idDiv").classList.remove("has-error");
+          document.getElementById("idIco").classList.remove("glyphicon-remove");
+          document.getElementById("idDiv").classList.add("has-success");
+          document.getElementById("idIco").classList.add("glyphicon-ok");
+          document.getElementById("sub").disabled = false;
+        }
+        else
+        {
+          document.getElementById("idDiv").classList.remove("has-success");
+          document.getElementById("idIco").classList.remove("glyphicon-ok");
+          document.getElementById("idDiv").classList.add("has-error");
+          document.getElementById("idIco").classList.add("glyphicon-remove");
+          document.getElementById("sub").disabled = true;
+        }
+    });
+    
+  }
   </script>
 </head>
 
@@ -85,7 +105,10 @@ include('../../lib/STAFF_add.php'); // Includes Login Script
               <label class="control-label">ID</label>
             </td>
              <td>
-                <input type="text" name="idNo" class="form-control" required></p> 
+               <div class="form-group has-feedback" id="idDiv">
+               <input type="text" name="idNo" class="form-control" id="idNo" onkeyup="checkID(this.value)"  required>
+               <span class="glyphicon form-control-feedback" id="idIco"></span>
+               </div>
             </td>
           </tr>
           <tr>
@@ -93,7 +116,10 @@ include('../../lib/STAFF_add.php'); // Includes Login Script
               <label class="control-label">Name</label>
             </td>
             <td>
-              <input type="text" name="userNm" class="form-control" required>
+              <div class="form-group has-feedback" id="uDiv">
+              <input type="text" name="userNm" class="form-control" id="userNm"   required>
+              <span class="glyphicon form-control-feedback" id="uIco"></span>
+               </div>
             </td>
           </tr>
           <tr>
@@ -139,7 +165,7 @@ include('../../lib/STAFF_add.php'); // Includes Login Script
         <!-- Show error message -->
         <?php echo $error; ?>
         <!-- form buttons -->
-        <p align="right"><a href="index.php" class="btn btn-danger">Cancel</a> <input type="submit"  name="submit" class="btn btn-primary" value="Create"></p>
+        <p align="right"><a href="index.php" class="btn btn-danger">Cancel</a> <input type="submit"  name="submit" class="btn btn-primary" value="Create" id="sub"></p>
       </form>
     </div>
   </div>
