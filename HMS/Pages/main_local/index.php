@@ -74,7 +74,7 @@
         <tr>
            <td>
 
-              <a href="#" class="btn btn-block btn-huge btn-primary " >Past Student</a>
+              <a href="past_student.php#" class="btn btn-block btn-huge btn-primary " >Past Student</a>
             </td>
         </tr> 
         <tr>
@@ -94,7 +94,7 @@
         <table>
           <tr>
             <td>
-              <a href="#" class="btn btn-block btn-huge btn-primary"> Edit Hostel</a>
+              <a href="editHostel.php" class="btn btn-block btn-huge btn-primary"> Edit Hostel</a>
             </td>
           </tr>
          <tr><td><a href="add_new.php" class="btn btn-block btn-huge btn-success">Allocate approved Student to hostel</a></td>
