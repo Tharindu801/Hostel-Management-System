@@ -17,7 +17,7 @@ $sql = "UPDATE `hostel_detail` SET `name`='$hname',`address`='$oaddress',`contac
 // run sql
 if ($conn->query($sql) === TRUE) {
 	
-	header("Location: ..\Pages\main_local\index.php");
+	header("Location: ..\Pages\main_admin\index.php");
 } 
 else {
 	echo "Error: " . $sql . "<br>" . $conn->error;

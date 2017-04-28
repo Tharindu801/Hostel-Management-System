@@ -39,8 +39,11 @@
   <script>
   // Get Table data
 
-     function   getStData(key) {
-    $.get("../../lib/DOC_StudentDetails.php?key="+key, function(data, status){
+     function   getStData() {
+      var hid = document.getElementById("hostel").value;
+      var rYear = document.getElementById("regYear").value;
+
+    $.get("../../lib/DOC_StudentDetails.php?hid="+hid+"&ryear="+rYear, function(data, status){
         document.getElementById("printCont").innerHTML = data;
     });
   }
@@ -68,15 +71,24 @@
   </script>
   <?php include('../../lib/STD_Con.php');?>
  </head>
- <body onload="getStData('')">
+ <body>
  <!-- Panel start -->
  <div class="col-xs-12" name="Container">
  	<div class="panel panel-primary">
- 		<div class="panel-heading form-inline">Student Details - Print Preview
- 		<select name="hostel" class="form-control" onchange="getStData(this.value);">
+ 		<div class="panel-heading form-inline">Student Details - 
+    <label>Select Hostel </label>
+ 		<select name="hostel" class="form-control" id="hostel">
       <option selected disabled hidden>Select Hostel</option>
         <?php
-        $sql = "SELECT * FROM hostel_detail";
+        if($_SESSION['usertype'] == 'admin')
+        {
+          $sql = "SELECT * FROM hostel_detail";
+        }
+        else
+        {
+          $HID = $_SESSION['hostel_id'];
+          $sql = "SELECT * FROM hostel_detail WHERE id = '$HID'";
+        }
         $result = $conn->query($sql);
 
         foreach ($result as $hname )
@@ -89,6 +101,9 @@
         ?>
 
     </select>
+    <label>  Select Registered year</label>
+    <input type="number" name="regYear" id="regYear" class="form-control">
+    <button type="button" class="btn btn-default" onclick="getStData()">Go!</button>
  		</div>
  		<div class="panel-body div-fix" name="printCont" id="printCont" style="align-content: center;">
  		</div>

@@ -41,9 +41,9 @@
     overflow:auto;
   }
   .btn-huge{
-    padding-top:40px;
-    padding-bottom:40px;
-    font-size:30px;
+    padding-top:50px;
+    padding-bottom:30px;
+    font-size:25px;
     display:block;
     text-align:center;
 }
@@ -74,9 +74,7 @@
         <tr>
            <td>
 
-              <a href="#" class="btn btn-block btn-huge btn-primary " >Past Student</a>
-
-              <a href="#" class="btn btn-block btn-huge btn-primary " ><span class="glyphicon glyphicon-user pull-left"></span> Past Student</a>
+              <a href="past_student.php#" class="btn btn-block btn-huge btn-primary " >Past Student</a>
             </td>
         </tr> 
         <tr>
@@ -96,7 +94,7 @@
         <table>
           <tr>
             <td>
-              <a href="#" class="btn btn-block btn-huge btn-primary"> Edit Hostel</a>
+              <a href="editHostel.php" class="btn btn-block btn-huge btn-primary"> Edit Hostel</a>
             </td>
           </tr>
          <tr><td><a href="add_new.php" class="btn btn-block btn-huge btn-success">Allocate approved Student to hostel</a></td>
@@ -106,11 +104,6 @@
               <a href="roomView.php" class="btn btn-block btn-huge btn-primary " > Room Detail</a>
             </td>
           </tr>
-              <a href="#" class="btn btn-block btn-huge btn-primary"><span class="glyphicon glyphicon-user pull-left"></span> Edit Hostel</a>
-            </td>
-          </tr>
-         <tr><td><a href="add_new.php" class="btn btn-block btn-huge btn-success">Allocate approved Student to hostel</a></td></tr>
-
         </table>
       </div>
        <div class="col-sm-1">

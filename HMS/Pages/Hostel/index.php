@@ -62,7 +62,16 @@
 		  <select name="hostel" class="form-control" onchange="getStData(this.value);" style="width:100%">
 		  <option selected disabled hidden>Select Hostel</option>
 		    <?php
-		    $sql = "SELECT * FROM hostel_detail";
+        if($_SESSION['usertype'] == 'admin')
+        {
+          $sql = "SELECT * FROM hostel_detail";
+        }
+        else
+        {
+          $HID = $_SESSION['hostel_id'];
+          $sql = "SELECT * FROM hostel_detail WHERE id = '$HID'";
+        }
+		    
 		    $result = $conn->query($sql);
 
 		    foreach ($result as $hname )

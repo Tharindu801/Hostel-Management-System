@@ -41,7 +41,7 @@
 
 <body>
   <div class="col-lg-12">
-        <form class="form-inline" action="..\..\lib\Hos_Updatenew.php" method="POST" id="myForm">
+        <form class="form-inline" action="..\..\lib\Hos_UpdatenewforAdmin.php" method="POST" id="myForm">
           <div id="basic" class="panel panel-primary">
             <div class="panel-heading">
             <b>Basic information</b>
