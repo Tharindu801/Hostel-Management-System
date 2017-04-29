@@ -6,7 +6,7 @@ include("session.php");
 $hid=$_SESSION['hostel_id'];
 
 //Query
-	$sql = "SELECT * FROM `hostel_room` WHERE `Hos_ID`='$hid';";
+	$sql = "SELECT * FROM hostel_room WHERE Hos_ID = '$hid';";
 	$result = $conn->query($sql);
 	
 	if ($result->num_rows > 0) {

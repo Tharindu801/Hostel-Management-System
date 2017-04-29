@@ -12,7 +12,7 @@ include("session.php");
 //
 $date=date("Y/m/d");
 
-	$sql_out="SELECT `hostel_addmission`.`reg_no` ,`student_hostel`.* FROM `hostel_addmission`,`student_hostel` WHERE (`student_hostel`.`hostel_id`='$var_value'  AND  `hostel_addmission`.`vacate_date`<'$date') AND `hostel_addmission`.`reg_no`=`student_hostel`.`reg_no` GROUP BY `hostel_addmission`.`reg_no`;";
+	$sql_out="SELECT hostel_addmission.reg_no ,student_hostel.* FROM hostel_addmission,student_hostel WHERE (student_hostel.hostel_id='$var_value'  AND  hostel_addmission.vacate_date<'$date') AND hostel_addmission.reg_no=student_hostel.reg_no GROUP BY hostel_addmission.reg_no;";
 
 	$result = $conn->query($sql_out);
 
