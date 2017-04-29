@@ -24,7 +24,7 @@ include('STD_Con.php');
           ,student_hostel.room_no
           ,student_hostel.hostel_id 
       FROM student_detail,student_hostel 
-      WHERE student_hostel.hostel_id LIKE '$var_value' GROUP BY student_hostel.reg_no ; ";
+      WHERE student_hostel.hostel_id = '$var_value' AND student_detail.reg_no = student_hostel.reg_no ; ";
 	
 	$result = $conn->query($sqlall);
 

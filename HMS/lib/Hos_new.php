@@ -10,18 +10,10 @@ $capasity = $_POST["capasity"];
 $contact_no=$_POST["Ocontact"];
 $pay = $_POST["pay"];
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 8de6317... this is already implimented system
 $sql = "INSERT INTO hostel_detail (id,name,address,contact_no,capacity,available,category, anual_payment) VALUES ('".$hid."','".$hname."', '".$oaddress."','".$contact_no."','".$capasity."',  '".$capasity."', '".$Gender."', '$pay');";
 
 $sql_staff = "INSERT INTO hostel_staff(hostel_id,warden_id,subwarden_id) VALUES ('$hid', 'no' ,'no')";
 
-
-<<<<<<< HEAD
 	$handle = fopen($_FILES['filename']['tmp_name'], "r");
  	$c = 0;
 	
@@ -45,13 +37,10 @@ fclose($handle);
 
 // run sql
 if ($conn->query($sql) === TRUE && $conn->query($sql_staff)==TRUE && $conn->query($sql_room)==TRUE) {
-=======
-
-
 // run sql
 if ($conn->query($sql) === TRUE && $conn->query($sql_staff)==TRUE) {
 	
->>>>>>> 8de6317... this is already implimented system
+this is already implimented system
 	header("Location: ..\Pages\main_admin\index.html");
 } 
 else {

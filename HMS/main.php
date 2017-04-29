@@ -124,8 +124,7 @@
           <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span><?php echo $ses_name; ?><span class="caret"></span></a>
       <ul class="dropdown-menu">
-        <li><a href="Pages/User/ChangeUserNm.php"><span class="glyphicon glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Change User name</a></li>
-        <li><a href="Pages/User/ChangePW.php"><span class="glyphicon glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Change Password</a></li>
+        <li><a href="Pages/User/FristTimeLog.php"><span class="glyphicon glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Change User name & password</a></li>
       </ul>
     </li>
             <li><a href="lib/logout.php"><span class="glyphicon glyphicon-log-out pull-left"></span> Log Out &nbsp;&nbsp;</a></li>
