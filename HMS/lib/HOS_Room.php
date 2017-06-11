@@ -1,10 +1,8 @@
 <?php
 $key = $_GET["key"];
-include('STD_Con.php');
 include("session.php");
-
+include('STD_Con.php');
 $hid=$_SESSION['hostel_id'];
-
 //Query
 	$sql = "SELECT * FROM hostel_room WHERE Hos_ID = '$hid';";
 	$result = $conn->query($sql);
@@ -12,7 +10,7 @@ $hid=$_SESSION['hostel_id'];
 	if ($result->num_rows > 0) {
 		// output data of each row
 		//create table
-		echo "<table class=\"table table-hover table-fixed\">
+		echo "<table class=\"table table-hover\">
 			<thead>
     		<tr>
     		 <th lass=\"col-xs-4\">Room. No.</th><th lass=\"col-xs-2\">Max Capacity</th><th lass=\"col-xs-2\">Current</th>
@@ -39,4 +37,4 @@ $hid=$_SESSION['hostel_id'];
     			<span id></span>
     			</table>";
 		}
-?>	
+?>
