@@ -1,7 +1,7 @@
 <?php
 $key = $_GET["key"];
-include('STD_Con.php');
 include("session.php");
+include('STD_Con.php');
 
 $hid=$_SESSION['hostel_id'];
 
