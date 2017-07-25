@@ -142,7 +142,7 @@
           
         </table>
       <!-- Buttons -->
-        <p align="right"><a href="withoutPic.php?" class="btn btn-danger">Cancel</a>
+        <p align="right"><a href="withoutRoom.php?" class="btn btn-danger">Cancel</a>
         <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-floppy-save"></i>&nbsp;Save</button>
         </p>
       </form>
