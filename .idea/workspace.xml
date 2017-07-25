@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a18efcd-9ebf-4e71-8fe7-0347f19f1aab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HMS/Pages/main_local/addRoom.php" afterPath="$PROJECT_DIR$/HMS/Pages/main_local/addRoom.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HMS/Pages/main_local/roomView.php" afterPath="$PROJECT_DIR$/HMS/Pages/main_local/roomView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HMS/lib/HOS_Room.php" afterPath="$PROJECT_DIR$/HMS/lib/HOS_Room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Room Details.csv" afterPath="$PROJECT_DIR$/Room Details.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +37,8 @@
       <file leaf-file-name="roomView.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/roomView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="88" column="341" lean-forward="true" selection-start-line="88" selection-start-column="341" selection-end-line="88" selection-end-column="341" />
+            <state relative-caret-position="300">
+              <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
               <folding>
                 <element signature="e#2490#2496#1#HTML" expanded="true" />
               </folding>
@@ -221,12 +219,12 @@
       <updated>1500979478277</updated>
       <workItem from="1500979483163" duration="503000" />
       <workItem from="1500980252794" duration="8735000" />
-      <workItem from="1500992750105" duration="3456000" />
+      <workItem from="1500992750105" duration="3734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12694000" />
+    <option name="totallyTimeSpent" value="12972000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/roomView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="88" column="341" lean-forward="true" selection-start-line="88" selection-start-column="341" selection-end-line="88" selection-end-column="341" />
+        <state relative-caret-position="300">
+          <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
           <folding>
             <element signature="e#2490#2496#1#HTML" expanded="true" />
           </folding>

@@ -87,6 +87,7 @@ if(!isset($ses_conform))
         </div>
         <div id="controlBtns" class="well well-sm" align="center">
                 <a href="excel_Input_roomDT.php" class="btn btn-primary"><span class="glyphicon glyphicon-file pull-left"></span>&nbsp;&nbsp;Change Room details from CSV File</a>&nbsp;<div class="alert-info"><span class="glyphicon glyphicon-alert"></span>If you change room details, you have to allocate each students to rooms manually</div>
+            
         </div>
     </form>
 </div>
