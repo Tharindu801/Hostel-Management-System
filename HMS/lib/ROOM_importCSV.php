@@ -9,7 +9,7 @@ include('STD_Con.php');
    //delete previous room details and student allocations of room
     $sql_del_rooms = "DELETE FROM hostel_room WHERE Hos_ID = '$HID'";
     $conn->query($sql_del_rooms);
-    $sql_edit_studentRoom = "UPDATE student_hostel SET room_no = NULL WHERE hostel_id = '$HID'";
+    $sql_edit_studentRoom = "UPDATE student_hostel SET room_no = '0' WHERE hostel_id = '$HID'";
     $conn->query($sql_edit_studentRoom);
 //Import uploaded file to Database
 $handle = fopen($_FILES['filename']['tmp_name'], "r");
