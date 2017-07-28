@@ -68,22 +68,9 @@
   $key = $_GET['key'];
   $hid=$_SESSION['hostel_id'];
 
-  $sql="SELECT * FROM student_detail WHERE reg_no='".$key."';";
+  $sql="SELECT * FROM `student_hostel` WHERE `hostel_id`='$hid' AND `room_no`='0';";
   $result = $conn->query($sql);
   // Select available room
-  $sql_room = "SELECT * FROM hostel_room WHERE Hos_ID='$hid' AND `max_Cap` >`cur_Amount`;";
-  $result_room = $conn->query($sql_room);
-
-  if ($result->num_rows > 0)
-  {
-    while($row = $result->fetch_assoc())
-    {
-      $regNo = $row['reg_no'];
-      $fName = $row['full_name'];
-      $faculty=$row['faculty'];
-      $course=$row['course'];
-    }
-  }
 ?>
 <!-- Methords for btns -->
 <script>
@@ -103,9 +90,47 @@
         <table>
           <tr>
             <td class="left">Reg No.</td>
-            <td class="right"><input type="text" class="form-control" name="regNo" value="<?php echo "$regNo"; ?>"></td>
-            <!-- <input type="text" class="form-control" name="regNo1" value="<?php echo "$regNo"; ?>"> -->
+            <td class="right">
+               <select name="regNo" class="form-control" style="width:100%">
+                  <option selected disabled hidden>Select Student</option>
+                  <?php
+                
+
+        foreach ($result as $rNo )
+        {
+        ?>
+
+           <option value="<?php echo $rNo["reg_no"] ; ?>"> <?php echo $rNo["reg_no"] ?></option>
+          <?php $_SESSION['$reg_no']=$rNo["reg_no"]; ?>
+      <?php
+        }
+        ?>
+
+    </select>
+            </td>
           </tr>
+
+<?php 
+$regNo=$rNo["reg_no"];
+$sql_std="SELECT * FROM student_detail WHERE reg_no='$regNo';";
+  $result_std = $conn->query($sql_std);
+
+if ($result_std->num_rows > 0)
+  {
+    while($row = $result_std->fetch_assoc())
+    {
+      $fName = $row['full_name'];
+      $faculty=$row['faculty'];
+      $course=$row['course'];
+    }
+  }
+
+
+
+?>
+
+
+
           <tr>
             <td class="left">Full Name</td>
             <td class="right"><input type="text" class="form-control" name="fName" disabled="disabled" value="<?php echo "$fName"; ?>" ></td>
@@ -120,29 +145,12 @@
           </tr>
            <tr>
             <td class="left">Select Room:</td>
-            <td class="right">
-               <select name="room_no" class="form-control" style="width:100%">
-                  <option selected disabled hidden>Select Room</option>
-                  <?php
-                
-
-        foreach ($result_room as $rNo )
-        {
-        ?>
-
-           <option value="<?php echo $rNo["Room_ID"] ; ?>"> <?php echo $rNo["Room_ID"] ?></option>
-          <?php $_SESSION['$room_no']=$rNo["Room_ID"]; ?>
-      <?php
-        }
-        ?>
-
-    </select>
-            </td>
+             <td class="right"><input type="text" class="form-control" name="hostel" disabled="disabled" value="<?php echo "$key"; ?>" ></td>
           </tr>
           
         </table>
       <!-- Buttons -->
-        <p align="right"><a href="withoutRoom.php?" class="btn btn-danger">Cancel</a>
+        <p align="right"><a href="withoutPic.php?" class="btn btn-danger">Cancel</a>
         <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-floppy-save"></i>&nbsp;Save</button>
         </p>
       </form>

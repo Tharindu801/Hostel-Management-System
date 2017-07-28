@@ -6,7 +6,6 @@
 	$regNo=$_POST['regNo'];
 
 	
-	
 	$sql_get="SELECT * FROM `hostel_room` WHERE `Room_ID`='$room_no';";
 	$result=$conn->query($sql_get);
 	

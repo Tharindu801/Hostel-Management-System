@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a18efcd-9ebf-4e71-8fe7-0347f19f1aab" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HMS/Pages/main_local/studentInRoom.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HMS/Pages/main_local/addRoom.php" afterPath="$PROJECT_DIR$/HMS/Pages/main_local/addRoom.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HMS/Pages/main_local/roomView.php" afterPath="$PROJECT_DIR$/HMS/Pages/main_local/roomView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HMS/lib/ROOM_importCSV.php" afterPath="$PROJECT_DIR$/HMS/lib/ROOM_importCSV.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HMS/lib/DOC_anualPayment.php" afterPath="$PROJECT_DIR$/HMS/lib/DOC_anualPayment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HMS/lib/STD_addRoom.php" afterPath="$PROJECT_DIR$/HMS/lib/STD_addRoom.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,28 +42,27 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="hostel_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/hostel_view.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Hos_swap.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HMS/lib/Hos_swap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HMS/js/bootstrap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3887">
-              <caret line="1583" column="28" lean-forward="true" selection-start-line="1583" selection-start-column="28" selection-end-line="1583" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="253">
+              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <folding>
+                <marker date="1501267157831" expanded="true" signature="170:214" ph="UPDATE stude... " />
+                <marker date="1501267157831" expanded="true" signature="170:237" ph="UPDATE stude... " />
+                <marker date="1501267157831" expanded="true" signature="253:320" ph="UPDATE stude... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>H55</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,9 +72,20 @@
       <list>
         <option value="$PROJECT_DIR$/HMS/Pages/main_local/excel_Input_roomDT.php" />
         <option value="$PROJECT_DIR$/HMS/lib/ROOM_importCSV.php" />
-        <option value="$PROJECT_DIR$/HMS/Pages/main_local/roomView.php" />
         <option value="$PROJECT_DIR$/HMS/lib/HOS_Room.php" />
         <option value="$PROJECT_DIR$/HMS/Pages/main_local/studentInRoom.php" />
+        <option value="$PROJECT_DIR$/HMS/Pages/main_local/hostel_view.php" />
+        <option value="$PROJECT_DIR$/HMS/lib/DOC_anualPayment.php" />
+        <option value="$PROJECT_DIR$/HMS/Pages/main_local/roomView.php" />
+        <option value="$PROJECT_DIR$/HMS/Pages/main_local/inside_room.php" />
+        <option value="$PROJECT_DIR$/HMS/lib/STD_addRoom.php" />
+        <option value="$PROJECT_DIR$/HMS/Pages/main_local/addRoom.php" />
+        <option value="$PROJECT_DIR$/HMS/lib/STD_changeRoom.php" />
+        <option value="$PROJECT_DIR$/HMS/Pages/main_local/changeRoom.php" />
+        <option value="$PROJECT_DIR$/HMS/Pages/main_local/swapRoom.php" />
+        <option value="$PROJECT_DIR$/HMS/lib/Hos_swap.php" />
+        <option value="$PROJECT_DIR$/HMS/lib/HOS_roomView.php" />
+        <option value="$PROJECT_DIR$/HMS/lib/HOS_selectSTD.php" />
       </list>
     </option>
   </component>
@@ -133,8 +146,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Hostel" type="cbb8eebc:String" user="Hostel" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,12 +169,6 @@
               <item name="Hostel" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hostel" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="HMS" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Hostel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hostel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="HMS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Hostel" type="b2602c69:ProjectViewProjectNode" />
@@ -178,11 +195,6 @@
               <item name="HMS" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Student" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Hostel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hostel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -223,12 +235,15 @@
       <workItem from="1500992750105" duration="5738000" />
       <workItem from="1501001862660" duration="221000" />
       <workItem from="1501005727366" duration="577000" />
-      <workItem from="1501065231317" duration="7597000" />
+      <workItem from="1501065231317" duration="7758000" />
+      <workItem from="1501122539312" duration="12884000" />
+      <workItem from="1501217498613" duration="573000" />
+      <workItem from="1501260675447" duration="6778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23371000" />
+    <option name="totallyTimeSpent" value="43767000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -242,22 +257,22 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18051359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1749634" sideWeight="0.49344262" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16163142" sideWeight="0.4902439" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16163142" sideWeight="0.5097561" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16163142" sideWeight="0.49344262" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18051359" sideWeight="0.5065574" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -268,10 +283,138 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HMS/lib/STD_swapRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1501139778176" expanded="true" signature="125:179" ph="SELECT * FRO... hostel_room" />
+            <marker date="1501139778176" expanded="true" signature="370:442" ph="UPDATE `stud... " />
+            <marker date="1501139778176" expanded="true" signature="458:529" ph="UPDATE `host... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/HOS_roomView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1501267381835" expanded="true" signature="128:230" ph="SELECT `max_... hostel_room" />
+            <marker date="1501267381835" expanded="true" signature="466:519" ph="SELECT * FRO... student_hostel" />
+            <marker date="1501267381835" expanded="true" signature="674:728" ph="SELECT * FRO... student_detail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/swapRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <marker date="1501266730581" expanded="true" signature="1862:1914" ph="SELECT * FRO... student_detail" />
+            <marker date="1501266730581" expanded="true" signature="1992:2065" ph="SELECT * FRO... hostel_room" />
+            <marker date="1501266730581" expanded="true" signature="2350:2408" ph="SELECT room_... student_hostel" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/Student/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="76" column="5" lean-forward="false" selection-start-line="72" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/Hos_swap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <marker date="1501267157831" expanded="true" signature="170:214" ph="UPDATE stude... " />
+            <marker date="1501267157831" expanded="true" signature="170:237" ph="UPDATE stude... " />
+            <marker date="1501267157831" expanded="true" signature="253:320" ph="UPDATE stude... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/STD_swapRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1501139778176" expanded="true" signature="125:179" ph="SELECT * FRO... hostel_room" />
+            <marker date="1501139778176" expanded="true" signature="370:442" ph="UPDATE `stud... " />
+            <marker date="1501139778176" expanded="true" signature="458:529" ph="UPDATE `host... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/swapRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <marker date="1501266730581" expanded="true" signature="1862:1914" ph="SELECT * FRO... student_detail" />
+            <marker date="1501266730581" expanded="true" signature="1992:2065" ph="SELECT * FRO... hostel_room" />
+            <marker date="1501266730581" expanded="true" signature="2350:2408" ph="SELECT room_... student_hostel" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/HOS_roomView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1501267381835" expanded="true" signature="128:230" ph="SELECT `max_... hostel_room" />
+            <marker date="1501267381835" expanded="true" signature="466:519" ph="SELECT * FRO... student_hostel" />
+            <marker date="1501267381835" expanded="true" signature="674:728" ph="SELECT * FRO... student_detail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/Student/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/Hos_swap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <marker date="1501267157831" expanded="true" signature="170:214" ph="UPDATE stude... " />
+            <marker date="1501267157831" expanded="true" signature="170:237" ph="UPDATE stude... " />
+            <marker date="1501267157831" expanded="true" signature="253:320" ph="UPDATE stude... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/hostel_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32683">
+          <caret line="1421" column="20" lean-forward="true" selection-start-line="1421" selection-start-column="20" selection-end-line="1421" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/roomView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -314,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HMS/lib/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HMS/lib/STD_Con.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -349,38 +485,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/withoutRoom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1541">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HMS/lib/STD_noRoom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1497164877590" expanded="true" signature="123:427" ph="SELECT s.reg... student_detail" />
-            <marker date="1497164877590" expanded="true" signature="594:838" ph="..." />
-            <marker date="1497164877590" expanded="true" signature="605:824" ph="..." />
-            <marker date="1497164877590" expanded="true" signature="616:809" ph="..." />
-            <marker date="1497164877590" expanded="true" signature="1296:1448" ph="..." />
-            <marker date="1497164877590" expanded="true" signature="1308:1408" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HMS/lib/ROOM_importCSV.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding>
-            <marker date="1501065792331" expanded="true" signature="248:293" ph="DELETE FROM " />
-            <marker date="1501065792331" expanded="true" signature="359:423" ph="UPDATE stude... " />
-            <marker date="1501065792331" expanded="true" signature="705:816" ph="INSERT INTO hostel_room... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -388,7 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -396,25 +503,142 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="21" column="59" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/studentInRoom.php" />
+    <entry file="file://$PROJECT_DIR$/HMS/lib/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/DOC_anualPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
-            <marker date="1493162503603" expanded="true" signature="831:1075" ph="..." />
-            <marker date="1493162503603" expanded="true" signature="842:1061" ph="..." />
-            <marker date="1493162503603" expanded="true" signature="853:1046" ph="..." />
+            <marker date="1501124332451" expanded="true" signature="128:459" ph="SELECT s.nam... payment_details" />
+            <marker date="1501124332451" expanded="true" signature="217:289" ph="SELECT reg_N... payment_details" />
+            <marker date="1501124332451" expanded="true" signature="474:550" ph="SELECT anual... hostel_detail" />
+            <marker date="1501124332451" expanded="true" signature="1181:1527" ph="..." />
+            <marker date="1501124332451" expanded="true" signature="1191:1513" ph="..." />
+            <marker date="1501124332451" expanded="true" signature="1202:1498" ph="..." />
+            <marker date="1501124332451" expanded="true" signature="2117:2378" ph="..." />
+            <marker date="1501124332451" expanded="true" signature="2493:2645" ph="..." />
+            <marker date="1501124332451" expanded="true" signature="2505:2605" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1421" column="20" lean-forward="false" selection-start-line="1421" selection-start-column="20" selection-end-line="1421" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/hostel_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/HOS_Basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1493105568154" expanded="true" signature="68:263" ph="SELECT reg_n... student_detail" />
+            <marker date="1493105568154" expanded="true" signature="417:535" ph="..." />
+            <marker date="1493105568154" expanded="true" signature="428:535" ph="..." />
+            <marker date="1493105568154" expanded="true" signature="882:1043" ph="..." />
+            <marker date="1493105568154" expanded="true" signature="894:1003" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/STD_addRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/STD_noRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/withoutRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/addRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/STD_changeRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/changeRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/student_View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="53" column="36" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="53" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/Student/student_View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/swapRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="131" column="40" lean-forward="false" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="40" />
+          <folding>
+            <marker date="1501266730581" expanded="true" signature="1862:1914" ph="SELECT * FRO... student_detail" />
+            <marker date="1501266730581" expanded="true" signature="1992:2065" ph="SELECT * FRO... hostel_room" />
+            <marker date="1501266730581" expanded="true" signature="2350:2408" ph="SELECT room_... student_hostel" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HMS/Pages/Student/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+        <state relative-caret-position="138">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HMS/lib/HOS_Room.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
+        <state relative-caret-position="230">
           <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <marker date="1501066852748" expanded="true" signature="100:147" ph="SELECT * FRO... hostel_room" />
@@ -427,46 +651,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/student_View.php">
+    <entry file="file://$PROJECT_DIR$/HMS/lib/STD_swapRoom.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="53" column="36" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="53" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/studentInRoom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1501073230997" expanded="true" signature="145:205" ph="SELECT * FRO... student_hostel" />
-            <marker date="1501073230997" expanded="true" signature="546:648" ph="SELECT full_... student_detail" />
+            <marker date="1501139778176" expanded="true" signature="125:179" ph="SELECT * FRO... hostel_room" />
+            <marker date="1501139778176" expanded="true" signature="370:442" ph="UPDATE `stud... " />
+            <marker date="1501139778176" expanded="true" signature="458:529" ph="UPDATE `host... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/roomView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1012">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        <state relative-caret-position="231">
+          <caret line="74" column="44" lean-forward="false" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/hostel_view.php">
+    <entry file="file://$PROJECT_DIR$/HMS/lib/HOS_roomView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+          <folding>
+            <marker date="1501267381835" expanded="true" signature="128:230" ph="SELECT `max_... hostel_room" />
+            <marker date="1501267381835" expanded="true" signature="466:519" ph="SELECT * FRO... student_hostel" />
+            <marker date="1501267381835" expanded="true" signature="674:728" ph="SELECT * FRO... student_detail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/Pages/main_local/inside_room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HMS/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/HMS/lib/HOS_selectSTD.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3887">
-          <caret line="1583" column="28" lean-forward="true" selection-start-line="1583" selection-start-column="28" selection-end-line="1583" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="115">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#248#266#0#HTML" expanded="true" />
+            <marker date="1501267463904" expanded="true" signature="70:129" ph="SELECT reg_n... student_hostel" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HMS/lib/Hos_swap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <marker date="1501267157831" expanded="true" signature="170:214" ph="UPDATE stude... " />
+            <marker date="1501267157831" expanded="true" signature="170:237" ph="UPDATE stude... " />
+            <marker date="1501267157831" expanded="true" signature="253:320" ph="UPDATE stude... " />
+          </folding>
         </state>
       </provider>
     </entry>

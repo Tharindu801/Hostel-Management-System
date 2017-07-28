@@ -31,6 +31,13 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
+
+
+    function 	getStData(key) {
+        $.get("../../lib/HOS_selectSTD.php?key="+key, function(data, status){
+            document.getElementById("roomSTD").innerHTML = data;
+        });
+    }
   </script>
   <style>
     .upper{
@@ -84,6 +91,15 @@
       $course=$row['course'];
     }
   }
+$sql_previousRoom = "SELECT room_no FROM student_hostel WHERE reg_no = '$regNo'";
+$res_prev = $conn->query($sql_previousRoom);
+if($res_prev->num_rows>0)
+{
+    while($row_prev = $res_prev->fetch_assoc())
+    {
+        $prev_room = $row_prev['room_no'];
+    }
+}
 ?>
 <!-- Methords for btns -->
 <script>
@@ -99,7 +115,7 @@
     <div class="panel-heading"><h4 align="center">Add Student to Room</h4></div>
     <div class="panel-body">
     <!-- Show Student Data -->
-      <form class="form-inline" action="../../lib/STD_addRoom.php" method="POST">
+      <form class="form-inline" action="../../lib/Hos_swap.php" method="POST">
         <table>
           <tr>
             <td class="left">Reg No.</td>
@@ -110,18 +126,10 @@
             <td class="left">Full Name</td>
             <td class="right"><input type="text" class="form-control" name="fName" disabled="disabled" value="<?php echo "$fName"; ?>" ></td>
           </tr>
-          <tr>
-            <td class="left">Faculty</td>
-            <td class="right"><input type="text" class="form-control" name="faculty" disabled="disabled" value="<?php echo "$faculty"; ?>" ></td>
-          </tr>
-          <tr>
-            <td class="left">Course</td>
-            <td class="right"><input type="text" class="form-control" name="course" disabled="disabled" value="<?php echo "$course"; ?>" ></td>
-          </tr>
            <tr>
             <td class="left">Select Room:</td>
             <td class="right">
-               <select name="room_no" class="form-control" style="width:100%">
+               <select name="new_room_no" class="form-control" style="width:100%" onchange="getStData(this.value)">
                   <option selected disabled hidden>Select Room</option>
                   <?php
                 
@@ -139,8 +147,16 @@
     </select>
             </td>
           </tr>
-          
+          <tr>
+              <td>
+                  Select Student
+              </td>
+              <td>
+                  <div id="roomSTD"></div>
+              </td>
+          </tr>
         </table>
+          <input type="text" id="prev_Room" name="prev_Room" hidden value="<?php echo $prev_room?>">
       <!-- Buttons -->
         <p align="right"><a href="withoutRoom.php?" class="btn btn-danger">Cancel</a>
         <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-floppy-save"></i>&nbsp;Save</button>

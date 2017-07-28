@@ -72,7 +72,7 @@ if(!isset($ses_conform))
         }
         // redirect
         function Redirect(key) {
-            window.location="studentInRoom.php?key="+key;
+            window.location="inside_room.php?key="+key;
         }
     </script>
 </head>

@@ -1,10 +1,12 @@
 <?php
-$key = $_GET["key"];
+include('session.php');
 include('STD_Con.php');
+$key = $_GET["key"];
+$hos_Id = $_SESSION['hostel_id'];
 //Query
 
 	$sql  = "SELECT s.name_initial, p.reg_No,p.Paid_amount,p.BalanceToPay FROM payment_details as p, (SELECT reg_No, max(payday) as mxpay FROM payment_details group by reg_No) as q, student_detail AS s, student_hostel as h WHERE p.reg_No = q.reg_No AND p.payday = q.mxpay AND s.reg_no = p.reg_No AND p.reg_No = h.reg_no AND h.hostel_id = '$key'";
-	$sqlHos = "SELECT anual_payment, name, category FROM hostel_detail WHERE id = 'H55'";
+	$sqlHos = "SELECT anual_payment, name, category FROM hostel_detail WHERE id = '$hos_Id'";
 	$result = $conn->query($sql);
 	$resultHos = $conn->query($sqlHos);
 	if ($result->num_rows > 0 && $resultHos->num_rows == 1) {

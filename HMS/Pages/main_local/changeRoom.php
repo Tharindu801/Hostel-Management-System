@@ -84,6 +84,29 @@
       $course=$row['course'];
     }
   }
+$sql_previousRoom = "SELECT room_no FROM student_hostel WHERE reg_no = '$regNo'";
+$res_prev = $conn->query($sql_previousRoom);
+if($res_prev->num_rows>0)
+{
+    while($row_prev = $res_prev->fetch_assoc())
+    {
+        $prev_room = $row_prev['room_no'];
+    }
+}
+$sql_get="SELECT * FROM `hostel_room` WHERE `Room_ID`='$prev_room';";
+$result_get=$conn->query($sql_get);
+
+if ($result_get->num_rows > 0)
+{
+    while($row_get = $result_get->fetch_assoc())
+    {
+        $cur = $row_get['cur_Amount'];
+    }
+}
+
+$cur=$cur-1;
+$sql_room="UPDATE `hostel_room` SET `cur_Amount`='$cur' WHERE `Room_ID`='$prev_room';";
+$res_del = $conn->query($sql_room);
 ?>
 <!-- Methords for btns -->
 <script>
@@ -99,7 +122,7 @@
     <div class="panel-heading"><h4 align="center">Add Student to Room</h4></div>
     <div class="panel-body">
     <!-- Show Student Data -->
-      <form class="form-inline" action="../../lib/STD_addRoom.php" method="POST">
+      <form class="form-inline" action="../../lib/STD_changeRoom.php" method="POST">
         <table>
           <tr>
             <td class="left">Reg No.</td>
