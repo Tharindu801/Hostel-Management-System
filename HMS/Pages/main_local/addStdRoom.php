@@ -31,6 +31,13 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
+//        Ajax method for sent option value and take it back as a php
+    function 	getStData(key) {
+        $.get("../../lib/Hos_fillUpEmpty.php?key="+key, function(data, status){
+            document.getElementById("getDetails").innerHTML = data;
+        });
+    }
+
   </script>
   <style>
     .upper{
@@ -109,46 +116,10 @@
     </select>
             </td>
           </tr>
-
-<?php 
-$regNo=$rNo["reg_no"];
-$sql_std="SELECT * FROM student_detail WHERE reg_no='$regNo';";
-  $result_std = $conn->query($sql_std);
-
-if ($result_std->num_rows > 0)
-  {
-    while($row = $result_std->fetch_assoc())
-    {
-      $fName = $row['full_name'];
-      $faculty=$row['faculty'];
-      $course=$row['course'];
-    }
-  }
-
-
-
-?>
-
-
-
-          <tr>
-            <td class="left">Full Name</td>
-            <td class="right"><input type="text" class="form-control" name="fName" disabled="disabled" value="<?php echo "$fName"; ?>" ></td>
-          </tr>
-          <tr>
-            <td class="left">Faculty</td>
-            <td class="right"><input type="text" class="form-control" name="faculty" disabled="disabled" value="<?php echo "$faculty"; ?>" ></td>
-          </tr>
-          <tr>
-            <td class="left">Course</td>
-            <td class="right"><input type="text" class="form-control" name="course" disabled="disabled" value="<?php echo "$course"; ?>" ></td>
-          </tr>
-           <tr>
-            <td class="left">Select Room:</td>
-             <td class="right"><input type="text" class="form-control" name="hostel" disabled="disabled" value="<?php echo "$key"; ?>" ></td>
-          </tr>
-          
         </table>
+
+
+        <div id="getDetails"></div>
       <!-- Buttons -->
         <p align="right"><a href="withoutPic.php?" class="btn btn-danger">Cancel</a>
         <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-floppy-save"></i>&nbsp;Save</button>

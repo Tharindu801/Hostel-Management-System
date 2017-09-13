@@ -14,36 +14,36 @@ $sql = "INSERT INTO hostel_detail (id,name,address,contact_no,capacity,available
 
 $sql_staff = "INSERT INTO hostel_staff(hostel_id,warden_id,subwarden_id) VALUES ('$hid', 'no' ,'no')";
 
-	$handle = fopen($_FILES['filename']['tmp_name'], "r");
- 	$c = 0;
+// 	$handle = fopen($_FILES['filename']['tmp_name'], "r");
+//  	$c = 0;
 	
-	while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
-	{
-		// to avoid title row
-		if ($c != 0) 
-		{
-		//sql for basic student details
-			$sql_room = "INSERT INTO Hostel_Room (Room_ID, Hos_ID, max_Cap, cur_Amount) VALUES ('".$data[0]."', '".$hid."', '".$data[0]."',0);";
-		}	
-	$c++;
-	}
+// 	while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
+// 	{
+// 		// to avoid title row
+// 		if ($c != 0) 
+// 		{
+// 		//sql for basic student details
+// 			$sql_room = "INSERT INTO Hostel_Room (Room_ID, Hos_ID, max_Cap, cur_Amount) VALUES ('".$data[0]."', '".$hid."', '".$data[0]."',0);";
+// 		}	
+// 	$c++;
+// 	}
  
-fclose($handle);
-// //print "Import done"
+// fclose($handle);
+// // //print "Import done"
 // echo "<script type='text/javascript'>alert('Successfully Imported a CSV File for User!');</script>";
 // echo "<script>document.location='../Pages/Student/index.php'</script>";
 //view upload form
 
 
 // run sql
-if ($conn->query($sql) === TRUE && $conn->query($sql_staff)==TRUE && $conn->query($sql_room)==TRUE) {
+if ($conn->query($sql) === TRUE && $conn->query($sql_staff)==TRUE) {
 // run sql
 if ($conn->query($sql) === TRUE && $conn->query($sql_staff)==TRUE) {
 	
-this is already implimented system
 	header("Location: ..\Pages\main_admin\index.html");
 } 
 else {
 	echo "Error: " . $sql . "<br>" . $conn->error;
+}
 }
 ?>
