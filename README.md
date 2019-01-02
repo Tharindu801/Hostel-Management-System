@@ -3,5 +3,5 @@ This is a Hostel Management System for university of jaffna designed and impleme
 # Database Configuration
 Database.sql contain all the tables that are required for the system. You should install it to your mySQL server.
 All the configururation changes are in following php files,
-  1. HMS/lib/STD_Con.php
-	2. HMS/lib/session.php
+1. HMS/lib/STD_Con.php
+2. HMS/lib/session.php
