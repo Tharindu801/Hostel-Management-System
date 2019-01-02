@@ -3,7 +3,7 @@
 	//sesson start
 	session_start();
 	$logedUser = $_SESSION['Loged_User'];
-	$ses_sql = "SELECT * FROM user_Details WHERE UserName = '$logedUser'";
+	$ses_sql = "SELECT * FROM user_details WHERE UserName = '$logedUser'";
 
 	$ses_result = $conn->query($ses_sql);
 
